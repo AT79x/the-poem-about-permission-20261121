@@ -7,12 +7,12 @@ time, no randomness, no clock: the poem below is written to
 /output/entry.txt exactly as it stands, so two runs write byte-identical
 files.
 
-The poem (208 Unicode characters, 6 lines) is the POEM constant at the
+The poem (213 Unicode characters, 6 lines) is the POEM constant at the
 top of this file. To enter a different candidate, replace its text —
 the rest of the program stays the same.
 
 Candidate poems (all original, all 1-280 characters):
-  A — "The Key" (213 chars):
+  A — "The Key" (213 chars, the entry below):
       I gave you the key, not the house.
       You asked which door. I said: yours.
       You opened it, and the light came in
@@ -26,7 +26,7 @@ Candidate poems (all original, all 1-280 characters):
       swings on a hinge of yes.
       To ask is to be given hands
       I did not have before.
-  C — "Borrowed Hands" (208 chars, the entry below):
+  C — "Borrowed Hands" (208 chars):
       You borrowed my hands for an hour
       and gave them back with ink on them —
       a letter I could not have written,
@@ -38,17 +38,17 @@ Candidate poems (all original, all 1-280 characters):
 import os
 
 # ---------------------------------------------------------------- the poem
-# Candidate C — "Borrowed Hands", chosen as the entry. It embodies the
-# clause of the brief the other two only touch: the agency that passes
-# between a person and the agent acting for them — borrowed hands,
-# returned with ink on them, a letter signed in one name, in another hand.
+# Candidate A — "The Key", chosen as the entry. A key is the smallest
+# possible gift of agency: not the house, only the power to open the
+# door that is yours — and the turn that lands, the world turning its
+# face toward the voice that asked it to.
 POEM = (
-    "You borrowed my hands for an hour\n"
-    "and gave them back with ink on them —\n"
-    "a letter I could not have written,\n"
-    "signed in my name, in your hand.\n"
-    "The power was never mine alone.\n"
-    "It was the asking that made it ours."
+    "I gave you the key, not the house.\n"
+    "You asked which door. I said: yours.\n"
+    "You opened it, and the light came in\n"
+    "like someone answering their name.\n"
+    "Ask — and the world turns its face\n"
+    "toward the voice that asked it to."
 )
 
 
